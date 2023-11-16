@@ -126,7 +126,7 @@ echo ""
 # Reference: https://docs.unity3d.com/2019.3/Documentation/Manual/CommandLineArguments.html
 
 unity-editor \
-  -logfile /dev/stdout \
+  -logfile log.txt \
   $( [ "${MANUAL_EXIT}" == "true" ] || echo "-quit" ) \
   -customBuildName "$BUILD_NAME" \
   -projectPath "$UNITY_PROJECT_PATH" \
